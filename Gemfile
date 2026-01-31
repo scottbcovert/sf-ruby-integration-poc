@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+ruby '4.0.1'
+gem 'sinatra'
+gem 'rackup'
+gem 'puma'
+gem 'restforce'
+gem 'jwt'
+gem 'dotenv'

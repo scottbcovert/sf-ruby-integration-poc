@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sf-ruby-integration-poc
+    env: ruby
+    buildCommand: bundle install
+    startCommand: bundle exec ruby app.rb
+    envVars:
+      - key: SF_CLIENT_ID
+        sync: false
+      - key: SF_CLIENT_SECRET
+        sync: false
+      - key: SF_PRIVATE_KEY
+        sync: false
+      - key: SECRET_KEY_BASE
+        sync: false
